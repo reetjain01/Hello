@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* all content is inside this header of the simulation */
+
+header{
+    display: flex;
+    /* margin: 25px; */
+    background: url('/File-1/peter_bg.jpg')no-repeat;
+    background-size: cover;
+    height: 500px;
+    /* background-color: green; */
+}
+
+
+
+
+/* Heading of Peterson's Algorithm  */
+
+h3{
+    /* border: 3px solid red; */
+    margin: 5px auto;
+    /* width: 40%; */
+    /* background-color: rgb(54, 98, 243); */
+    text-align: center;
+    font-size: 35px;
+    /* background: linear-gradient(rgb(135, 135, 202) , rgb(55, 196, 116)); */
+    font-weight: bold;
+    color: rebeccapurple;
+}
+
+.home{
+    /* padding-top: 50px; */
+    margin-top: 100px;
+    margin-left: 30px;
+    color: black;
+}
+.form1{
+    margin-top: 120px;
+    margin-left: 50px;
+    /* border: 2px solid green; */
+    display: inline-block;
+    /* margin-bottom: 2px; */
+    color: white;
+    width: 450px;
+    height: 240px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0 , 0.2);
+    
+}
+
+.form1 #processNo{
+    padding-right: 15px;
+}
+
+.form1 #bufferSize{
+  padding-right: 40px;
+}
+
+.form1 .label{
+    margin: 15px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.form1 input , .form2 input{
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    /* border-radius: 25px; */
+    /* height: 10%; */
+}
+
+.form1 button {
+    text-align: center;
+    justify-content: center;
+    margin: 30px 55px;
+    /* border: none; */
+    width: 70px;
+    height: 35px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form1 button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/* Another new form open as we have entered next button from the form1 to add processID , ConsumedTime , ProducedTime
+*/
+.form2{
+    /* border: 2px solid green; */
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 350px;
+    margin: 50px auto;
+    margin-left: 380px;
+    padding: 25px;
+}
+
+.form2 .label1{
+    margin: 10px;
+    /* padding-right: 50px; */
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    font-weight: bolder;
+}
+
+.form2 .label1 #processID{
+    padding-left: 100px;
+}
+
+.form2 #produceTime {
+    padding-right: 30px;
+}
+
+
+.form2 #consumeTime{
+padding-right: 30px;
+}
+
+.form2 button {
+   margin: 25px;
+   cursor: pointer;
+   margin-left: 20px;
+   height: 30px;
+   width: 80px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.form2 .add{
+    width: 150px;
+}
+
+.form2 button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.sec1{
+    /* border: 3px solid red; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: black;
+}
+
+
+section{
+    height: 420px;
+}
+
+    another section table
+.table{
+    /* border: 2px solid red; */
+    display: inline-block;
+    width: 970px;
+    height: 400px;
+    color: white;
+}
+.table h4{
+    color: white;
+    margin: 10px auto;
+    margin-left: 50%;
+    font-size: 25px;
+    text-shadow: none;
+    /* margin-top: 25px; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.output_table h4{
+    color: white;
+    margin: 10px auto;
+    margin-left: 50%;
+    font-size: 25px;
+    text-shadow: none;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid white;
+    width: 50%;
+    margin: 10px auto;
+
+}
+
+table , th , td{
+    border: 2px solid white;
+    padding: 5px;
+
+}
+
+th{
+    font-size: 19px;
+    color: white;
+}
+
+td{
+    font-size: 17px;
+    color: white;
+    position: relative;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    border-radius: 0px;
+}
+
+.navbar .logo a{
+    font-size: 1.7rem;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.heading1{
+width: 60%;
+}
+
+.heading1 h3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    gap: 2px;
+}
+    
+.heading1 p{
+text-align: center;
+color: rgb(238, 255, 0);
+font-size: 20px;
+text-align: left;
+font-weight: 700;
+word-spacing: 5px;
+line-height: 1.2;
+}

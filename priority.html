@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority Scheduling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ps.css">
+</head>
+<body>
+    <header id="top">
+        <div class="navbar">
+          <div class="logo"><a href="index.html">Scheduling Algorithm</a></div>
+          <ul class="links">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#info">About</a></li>
+            <li><a href="#exp">Experiment</a></li>
+            <li><a href="/File-1/index.html#algo" target="_blank">Algorithm</a></li>
+          </ul>
+  
+          <div class="contact">
+            <form action="/File-1/index.html#section-wrapper" method="get">
+            <button class="contact-btn" >CONTACT US</button>
+          </form>
+          </div>
+        </div>
+        <div class="heading1">
+         <h3>Priority Scheduling</h3>
+         <p>Priority Scheduling is a method of scheduling processes that is based on priority. In this algorithm, the scheduler selects the tasks to work as per the priority.
+          <br><br>
+          The processes with higher priority should be carried out first, whereas jobs with equal priorities are carried out on a round-robin or FCFS basis. Priority depends upon memory requirements, time requirements like arrival time , burst time , etc.</p>
+        </div>
+    </header>
+
+    <section id="info">>
+      <div class="content">
+        <!-- <img src="about.jpg" alt=""> -->
+        <div class="about-text">
+        <h2>Priority Scheduling...!</h3>
+        <h3>Preemptive<span> Priority Scheduling </span></h3>
+        <p>Preemptive Priority CPU Scheduling Algorithm is a pre-emptive method of CPU scheduling algorithm that works based on the priority of a process. In this algorithm, the scheduler schedules the tasks to work as per the priority, which means that a higher priority process should be executed first. In case of any conflict, i.e., when there is more than one process with equal priorities, then the pre-emptive priority CPU scheduling algorithm works on the basis of FCFS (First Come First Serve) algorithm. Preemptive Priority CPU Scheduling Algorithm uses a rank-based system to define a rank for each process, where lower rank processes have higher priority and higher rank processes have lower priority. </p> <br>
+        <div class="char">
+          <h4>Characteristics of Preemptive Priority Scheduling</h4>
+          <br>
+            <ul>
+              <li>A CPU algorithm that schedules processes based on priority.</li>
+              <li>It used in Operating systems for performing batch processes.</li>
+              <li>If two jobs having the same priority are READY, it works on a FIRST COME, FIRST SERVED basis</li>
+              <li>In priority scheduling, a number is assigned to each process that indicates its priority level.</li>
+              <li>Lower the number, higher is the priority.</li>
+              <li>In this type of scheduling algorithm, if a newer process arrives, that is having a higher priority than the currently running process, then the currently running process is preempted.</li>
+            </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="exp" id="exp">
+      <div class="exp-dabba">
+      <h4>Try the Algorithm</h4>
+      <p>To study more about about Preemptive Priority Scheduling let us explore by checking your own example. Here you have to add processID , Arrival Time , Burst Time , Priority , Completion Time , Waiting Time , Turn Around Time , Response Time</p>
+      <button class="add-btn" id="add-btn" onclick="toggleHide()">ADD</button>
+      
+      <br><br><br>
+      <div class="form" id="form" style="display: none;">
+      <div class="form-detail" id="form-detail">
+      <form id="formshow" method="get"> 
+        <h3>Fill The Form</h3>
+        <br>
+
+        <div class="label">
+        <label for="process-id">Process_ID     :   </label>
+        <input type="text" name="processid" id="processIDInput" placeholder="Enter Process ID">
+       </div>
+
+       <div class="label">
+        <label for="arrival-time">Arrival Time   : </label>
+        <input type="text" id="arrivalTimeInput" name="arrivalTimeInput" placeholder="Enter Arrival Time">
+      </div>
+
+      <div class="label">
+        <label for="burst-time">Burst Time    :   </label>
+        <input type="text" name="burstTime" id="cpuBurstTimeInput" placeholder="Enter Burst Time">
+      </div>
+
+      <div class="label">
+        <label for="priority-">Priority    :       </label>
+        <input type="text" name="priority" id="priorityInput" placeholder="Enter Priority">
+      </div>
+                
+                <button type="button" id="add" class="add">ADD</button>
+                <!-- <button type="button" id="dropButton">DROP</button> -->
+                <button id="reset">RESET</button>
+                <button type="button" id="calculateButton" class="calculateButton">CALCULATE</button>
+      </form>
+    </div>
+    
+    <div class="table" id="table">
+    <h4>Output</h4>
+    <table id="processTable">
+      <tr>
+        <th>ProcessID</th>
+        <th>Arrival Time</th>
+        <th>CPU Burst Time</th>
+        <th>Priority</th>
+      </tr>
+    </table>
+    </div>
+
+    <div class="resultTable1">
+    <table id="resultTable" class="resultTable" >
+      <tr>
+        <th>ProcessID</th>
+        <th>Arrival Time</th>
+        <th>CPU Burst Time</th>
+        <th>Priority</th>
+        <th>Completion Time</th>
+        <th>Turnaround Time</th>
+        <th>Waiting Time</th>
+        <th>Start Time</th>
+        <th>Response Time</th>
+        <!-- <th>Start Time</th> -->
+      </tr>
+    </table>
+  </div>
+
+  <div style="color:white;text-align:center;visibility: hidden; " id="GanttChart1">
+    <label style="text-align:center;" for="avgWaitTime" class="resultTable" id="AvgWaitTime">AvgWaiting Time:</label>
+    <p id="avgWaitTime"></p>
+    <label style="text-align:center;" for="avgTATime" class="resultTable" id="AvgTATime">Avg
+      Turnaround Time:</label>
+    <p id="avgTATime"></p>
+
+    <br>
+    <br>
+
+    <table id="GanttChart">
+      <h3>--The GanttChart for the above processes is--</h3>
+      <br>
+
+    </table>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  </div>
+      </div>
+    </section>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>

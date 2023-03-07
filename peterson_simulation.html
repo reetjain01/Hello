@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peterson Simulation</title>
+    <link rel="stylesheet" href="peter_sim.css">
+</head>
+<body>
+    <a href="peterson.html" class="home">HOME</a>
+    <h3>Peterson Algorithm Simulation</h3>
+    <br>
+    <header>
+    <div class="form1" id="form1">
+        <div class="label">
+            <label for="" id="processNo">No of Processes : </label>
+            <input type="number" id="processNoInput" placeholder="Enter process Number">
+        </div>
+        <br>
+        <div class="label">
+            <label for="" id="bufferSize">Buffer Size : </label>
+            <input type="number" id="bufferSizeInput" placeholder="Enter Buffer Size">
+        </div>  
+        <button id="continue" type="button" >NEXT</button>
+        <button type="button" id="reset" >Reset</button>
+    </div>
+
+    <div class="form2" id="form2" style="display: none;">
+        <div class="label1">
+            <label for="" >Process ID : </label>
+            <input type="text" id="processIDInput" placeholder="Enter Process ID">
+        </div>
+        <div class="label1">
+            <label for="">Produce Time : </label>
+            <input type="number" id="produceTimeInput" placeholder="Enter Produce Time">
+        </div>
+        <div class="label1">
+            <label for="" >Consume Time : </label>
+            <input type="number" id="consumeTimeInput" placeholder="Enter Consumed Time">
+        </div>
+        <button type="button" id="add" class="add">ADD / EXECUTE</button>
+        <!-- <button type="button">DELETE</button> -->
+        <button type="button" id="reset1">RESET</button>
+    </div>
+</header>
+
+<section class="sec1" id="sec1" >
+
+    <div class="table" id="table" style="visibility: hidden;">
+        <h4>Input</h4>
+        <table id="processTable">
+          <tr>
+            <th>ProcessID</th>
+            <th>Produce Time</th>
+            <th>Consume Time</th>
+          </tr>
+        </table>
+        </div>
+
+    <div class="output_table" id="output_table" style="visibility: hidden;">
+        <h4>Output</h4>
+        <table id="process_output_Table">
+          <tr>
+            <th>ProcessID</th>
+            <th>Time Prodeuced</th>
+            <th>Time Consumed</th>
+          </tr>
+        </table>
+        </div>
+</section>
+
+<script src="peter.js"></script>
+</body>
+</html>
